@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubeDoLivro", "ClubeDoLivro.csproj", "{EF3CCA7A-F2FF-4D3C-8C8C-067580D893B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubeDoLivro.Testes", "..\ClubeDoLivro.Testes\ClubeDoLivro.Testes.csproj", "{6E24DBCD-04DD-4E28-B497-675689AABD2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EF3CCA7A-F2FF-4D3C-8C8C-067580D893B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF3CCA7A-F2FF-4D3C-8C8C-067580D893B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF3CCA7A-F2FF-4D3C-8C8C-067580D893B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E24DBCD-04DD-4E28-B497-675689AABD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E24DBCD-04DD-4E28-B497-675689AABD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E24DBCD-04DD-4E28-B497-675689AABD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E24DBCD-04DD-4E28-B497-675689AABD2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

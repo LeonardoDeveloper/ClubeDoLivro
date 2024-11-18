@@ -9,5 +9,19 @@
         public string CodigoISBN { get; set; }
         public string Paginas { get; set; }
         public List<Autor> Autores { get; set; }
+
+        public Livro()
+        {
+            Autores = new List<Autor>();
+        }
+
+        public void AdicionarAutor(Autor autor)
+        {
+            if(!Autores.Contains(autor))
+            {  
+                Autores.Add(autor);
+                autor.AdicionarLivro(this);
+            }    
+        }
     }
 }
