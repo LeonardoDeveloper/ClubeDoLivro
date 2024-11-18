@@ -1,4 +1,4 @@
-﻿namespace ClubeDoLivro
+﻿namespace ClubeDoLivro.Domain
 {
     public enum Versao
     {
