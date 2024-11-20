@@ -1,4 +1,5 @@
 using ClubeDoLivro.Domain;
+using FluentAssertions;
 
 namespace ClubeDoLivro.Testes
 {
@@ -23,25 +24,25 @@ namespace ClubeDoLivro.Testes
         }
 
         [Fact]
-        public void QuandoEuCrioUmLivro_APropriedadeAutoresDeveEstarInstanciada()
+        public void QuandoEuCrioUmLivro_AQuantidadeDeAutoresDeveSerZero()
         {
             //Arrange
 
             //Act
 
             //Assert
-            Assert.NotNull(_livro.Autores);
+            _livro.QuantidadeAutores.Should().Be(0);
         }
 
         [Fact]
-        public void QuandoEuCrioUmLivro_APropriedadePaginasDeveSerNula()
+        public void QuandoEuCrioUmLivro_APropriedadePaginasDeveSerZero()
         {
             //Arrange
 
             //Act
 
             //Assert
-            Assert.Null(_livro.Paginas);
+            _livro.Paginas.Should().Be(0);
         }
 
         [Fact]
@@ -97,6 +98,22 @@ namespace ClubeDoLivro.Testes
 
             //Assert
             Assert.Equal(0, _livro.Id);
+        }
+
+        [Fact]
+        public void QuandoEuAdicionoUmAutorParaOLivro_EsseAutorPrecisaAtualizarAListaDeLivrosEscritos()
+        {
+            //Arrange
+            var autor = AutorTesteFactory.ObterAutor();
+
+            var livro = LivroTesteFactory.ObterLivro();
+            //Act
+            livro.AdicionarAutor(autor);
+
+            //Assert
+            autor.LivrosEscritos.Should().Be(1);
+            autor.Livros.Should().NotBeEmpty();
+            autor.Livros.Should().HaveCount(1);
         }
     }
 }
