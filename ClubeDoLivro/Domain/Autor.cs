@@ -1,4 +1,5 @@
 ﻿
+
 namespace ClubeDoLivro.Domain
 {
     public class Autor
@@ -32,5 +33,7 @@ namespace ClubeDoLivro.Domain
                 !string.IsNullOrWhiteSpace(Nome)
                 && !string.IsNullOrWhiteSpace(SobreNome);
         }
+
+        public Autor Clone() => MemberwiseClone() as Autor;
     }
 }

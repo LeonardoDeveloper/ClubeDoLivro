@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubeDoLivro.Testes", "..\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubeDoLivro.Blazor", "..\ClubeDoLivro.Blazor\ClubeDoLivro.Blazor.csproj", "{7B47B192-01BC-4DA6-B3FF-A2CDBA61C5E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubeDoLivro.Function", "..\ClubeDoLivro.Function\ClubeDoLivro.Function.csproj", "{D2264426-4E93-430C-B890-CDD0CAD09F08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7B47B192-01BC-4DA6-B3FF-A2CDBA61C5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B47B192-01BC-4DA6-B3FF-A2CDBA61C5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B47B192-01BC-4DA6-B3FF-A2CDBA61C5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2264426-4E93-430C-B890-CDD0CAD09F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2264426-4E93-430C-B890-CDD0CAD09F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2264426-4E93-430C-B890-CDD0CAD09F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2264426-4E93-430C-B890-CDD0CAD09F08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

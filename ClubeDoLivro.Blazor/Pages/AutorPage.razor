@@ -1,0 +1,23 @@
+﻿
+<MudDialog>
+    <DialogContent>
+        <h1>Autor</h1>
+        <MudTextField Label="Id" Variant="Variant.Outlined" Margin="Margin.Dense" ReadOnly Value="Autor.Id"></MudTextField>
+        <MudTextField Label="Nome" Variant="Variant.Outlined" Margin="Margin.Dense" @bind-Value="Autor.Nome"></MudTextField>
+        <MudTextField Label="SobreNome" Variant="Variant.Outlined" Margin="Margin.Dense" @bind-Value="Autor.SobreNome"></MudTextField>
+        <MudTextField Label="LivrosEscritos" Variant="Variant.Outlined" Margin="Margin.Dense" ReadOnly Value="Autor.LivrosEscritos"></MudTextField>
+
+
+    </DialogContent>
+
+    <DialogActions>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick=Confirmar>Confirmar</MudButton>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick=Cancelar>Cancelar</MudButton>
+
+    </DialogActions>
+
+</MudDialog>
+
+
+
+
